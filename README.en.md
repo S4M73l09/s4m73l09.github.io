@@ -1,4 +1,6 @@
-# S4M73l09 Infra Portfolio (Astro)
+# s4m73l09.github.io (Astro)
+
+> This repo is rename to `s4m73l09.github.io` for more comfortable.
 
 This repository has been migrated to **Astro**.
 
