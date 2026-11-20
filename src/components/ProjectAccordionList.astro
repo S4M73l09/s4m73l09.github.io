@@ -10,6 +10,7 @@ interface Props {
     impact: string;
     repository: string;
     details: string;
+    supportedTechnologies: string;
   };
 }
 
@@ -19,7 +20,8 @@ const text = labels ?? {
   solution: 'Solution',
   impact: 'Impact',
   repository: 'Repository',
-  details: 'Details'
+  details: 'Details',
+  supportedTechnologies: 'Supported technologies'
 };
 
 const toBase = (path: string) => {
@@ -42,6 +44,14 @@ const toBase = (path: string) => {
           <p><strong>{text.solution}:</strong> {project.solution}</p>
           <p><strong>{text.impact}:</strong> {project.impact}</p>
           <p class="stack">{project.stack.join(' · ')}</p>
+          {project.supportedTechnologies?.length ? (
+            <div class="supported-technologies">
+              <span class="supported-technologies-label">{text.supportedTechnologies}</span>
+              <ul aria-label={text.supportedTechnologies}>
+                {project.supportedTechnologies.map((technology) => <li>{technology}</li>)}
+              </ul>
+            </div>
+          ) : null}
           <div class="accordion-links">
             <a class="cta" href={toBase(`${detailBasePath}/${project.slug}`)}>{text.details} →</a>
             <a class="cta" href={project.repo} target="_blank" rel="noreferrer">{text.repository} ↗</a>

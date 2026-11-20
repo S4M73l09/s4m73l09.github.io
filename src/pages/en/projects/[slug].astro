@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import MainLayout from '../../../layouts/MainLayout.astro';
 import { getPortfolioContent } from '../../../domain/portfolio';
 
@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 const contentEn = getPortfolioContent('en');
 ---
 

@@ -11,6 +11,7 @@ export type PortfolioItem = {
   solution: string;
   impact: string;
   stack: string[];
+  supportedTechnologies?: string[];
   repo: string;
   featured: boolean;
   order: number;

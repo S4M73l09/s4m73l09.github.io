@@ -50,7 +50,8 @@ export const contentEs: HomeContent = {
     solution: 'Solución',
     impact: 'Impacto',
     repository: 'Repositorio',
-    details: 'Detalles'
+    details: 'Detalles',
+    supportedTechnologies: 'Tecnologías soportadas'
   },
   kpiHeaders: {
     metric: 'KPI',

@@ -33,6 +33,7 @@ export const getPortfolioItems = async (
       solution: entry.data.solution,
       impact: entry.data.impact,
       stack: entry.data.stack,
+      supportedTechnologies: entry.data.supportedTechnologies,
       repo: entry.data.repo,
       featured: entry.data.featured,
       order: entry.data.order,

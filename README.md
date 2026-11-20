@@ -2,6 +2,8 @@
 
 > Se renombro el repositorio, apuntando al nuevo nombre de `s4m73l09.github.io` para mas comodidad.
 
+Se ha actualizado de Astro 5 -> Astro 6
+
 Este repositorio ha sido migrado a **Astro**.
 
 Importante:
