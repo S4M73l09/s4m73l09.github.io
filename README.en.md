@@ -2,7 +2,7 @@
 
 > This repo is rename to `s4m73l09.github.io` for more comfortable.
 
-This repository update Astro 5 -> Astro 6
+This repository update Astro 6 -> Astro 7
 
 This repository has been migrated to **Astro**.
 
@@ -39,13 +39,14 @@ Important:
 ## Local development
 
 Requirements:
-- Node.js 20+
+- Node.js 24
 
 Commands:
 - `npm install`
 - `npm run dev`
 - `npm run build`
 - `npm run preview`
+- `npx astro build --timings`: Allows you to calculate response times.
 
 ## How to add content
 
