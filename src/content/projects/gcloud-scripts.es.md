@@ -5,14 +5,12 @@ routeSlug: gcloud-scripts
 challenge: Automatizar recursos de despliegue con scripts PowerShell y Bash.
 solution: Wrapper PowerShell + script Bash para Linux con menú interactivo y personalización.
 impact: Configuración unificada de recursos en Google Cloud y artefactos Terraform.
-stack:
+technologies:
   - PowerShell
   - Bash
   - GCloud
   - Terraform
   - Linux
-  - Automation
-  - DevOps
 repo: https://github.com/S4M73l09/Gcloud-Script
 featured: true
 order: 3

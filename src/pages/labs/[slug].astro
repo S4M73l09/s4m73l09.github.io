@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import MainLayout from '../../layouts/MainLayout.astro';
+import TechnologyGroups from '../../components/TechnologyGroups.astro';
 import { getPortfolioContent } from '../../domain/portfolio';
 
 export async function getStaticPaths() {
@@ -45,7 +46,7 @@ const contentEs = getPortfolioContent('es');
   </section>
 
   <section class="section card">
-    <p class="stack">{entry.data.stack.join(' · ')}</p>
+    <TechnologyGroups technologies={entry.data.technologies} language={entry.data.lang} />
     <a class="cta" href={entry.data.repo} target="_blank" rel="noreferrer">{contentEs.cardLabels.repository} ↗</a>
   </section>
 

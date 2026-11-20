@@ -6,12 +6,16 @@ provider: gcs
 challenge: Levantar infraestructura real apoyada en el bootstrap previo.
 solution: Infraestructura como código separada por repositorios con patrón bootstrap/live.
 impact: Mejora la gestión, el mantenimiento y la evolución de la infraestructura.
-stack:
+technologies:
   - Terraform
   - GCS
   - Docker
   - Ansible
-  - Monitoring
+  - Grafana
+  - Prometheus
+  - Checkov
+  - Trivy
+  - TFLint
 repo: https://github.com/S4M73l09/GCS-Infra-Live
 featured: true
 order: 2

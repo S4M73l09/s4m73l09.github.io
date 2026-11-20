@@ -7,13 +7,13 @@ const resolveProvider = (entry: {
   data: {
     provider?: string;
     title: string;
-    stack: string[];
+    technologies: string[];
   };
 }): 'gcs' | 'az' | undefined => {
   const raw = entry.data.provider?.toLowerCase();
   if (raw === 'gcs' || raw === 'az') return raw;
 
-  const blob = `${entry.data.title} ${entry.data.stack.join(' ')}`.toLowerCase();
+  const blob = `${entry.data.title} ${entry.data.technologies.join(' ')}`.toLowerCase();
   if (blob.includes('azure') || blob.includes('az')) return 'az';
   if (blob.includes('gcs') || blob.includes('gcloud') || blob.includes('google cloud')) return 'gcs';
   return undefined;
@@ -28,11 +28,12 @@ export const getPortfolioItems = async (
   return entries
     .map((entry) => ({
       slug: entry.data.routeSlug,
+      language: entry.data.lang,
       title: entry.data.title,
       challenge: entry.data.challenge,
       solution: entry.data.solution,
       impact: entry.data.impact,
-      stack: entry.data.stack,
+      technologies: entry.data.technologies,
       supportedTechnologies: entry.data.supportedTechnologies,
       repo: entry.data.repo,
       featured: entry.data.featured,

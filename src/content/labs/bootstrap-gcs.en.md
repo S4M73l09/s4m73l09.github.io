@@ -6,7 +6,7 @@ provider: gcs
 challenge: Create an isolated baseline to avoid inherited deployment failures.
 solution: Separate bootstrap repository reusable across future projects.
 impact: Cleaner boundary between bootstrap and live infrastructure.
-stack:
+technologies:
   - OIDC
   - GCloud
   - Terraform

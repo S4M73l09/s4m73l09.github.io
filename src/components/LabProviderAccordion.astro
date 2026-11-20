@@ -1,5 +1,6 @@
 ---
 import type { LabProvider, PortfolioItem } from '../domain/portfolio/types';
+import TechnologyGroups from './TechnologyGroups.astro';
 
 interface Props {
   labs: PortfolioItem[];
@@ -78,7 +79,7 @@ const txt =
                   <article class="provider-lab-row">
                     <h3>{item.title}</h3>
                     <p>{item.impact}</p>
-                    <p class="stack">{item.stack.join(' · ')}</p>
+                    <TechnologyGroups technologies={item.technologies} language={item.language} />
                     <div class="accordion-links">
                       <a class="cta" href={toBase(`${basePath}/${item.slug}`)}>{txt.detail} →</a>
                       <a class="cta" href={item.repo} target="_blank" rel="noreferrer">{txt.repository} ↗</a>

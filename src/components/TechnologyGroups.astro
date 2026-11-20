@@ -1,0 +1,25 @@
+---
+import type { PortfolioLanguage } from '../domain/portfolio/types';
+import { groupTechnologies } from '../domain/portfolio/technologyCategories';
+
+interface Props {
+  technologies: string[];
+  language: PortfolioLanguage;
+}
+
+const { technologies, language } = Astro.props;
+const groups = groupTechnologies(technologies, language);
+---
+
+{groups.length > 0 && (
+  <div class="technology-groups">
+    {groups.map((group) => (
+      <section class="technology-group" aria-label={group.category}>
+        <span class="technology-group-category">{group.category}</span>
+        <ul>
+          {group.technologies.map((technology) => <li>{technology}</li>)}
+        </ul>
+      </section>
+    ))}
+  </div>
+)}

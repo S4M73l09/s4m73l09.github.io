@@ -27,6 +27,7 @@ interface Props {
   floatingSectionHref?: string;
   floatingSectionLabel?: string;
   pageEnterFromLeft?: boolean;
+  pageClass?: string;
   blurBackground?: boolean;
   ogImagePath?: string;
 }
@@ -49,6 +50,7 @@ const {
   floatingSectionHref = '/',
   floatingSectionLabel = '',
   pageEnterFromLeft = false,
+  pageClass = '',
   blurBackground = false,
   ogImagePath = '/og-image.svg'
 } = Astro.props;
@@ -63,6 +65,7 @@ const bodyClass = [
   showProfileGate ? 'has-profile-gate' : '',
   showProfileGate ? 'await-profile-entry' : '',
   pageEnterFromLeft ? 'page-enter-left' : '',
+  pageClass,
   blurBackground ? 'background-blur' : ''
 ]
   .filter(Boolean)

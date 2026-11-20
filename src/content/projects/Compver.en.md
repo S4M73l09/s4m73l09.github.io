@@ -5,7 +5,7 @@ routeSlug: "compver"
 challenge: "App for compared versions in differents Tools."
 solution: "Meet versions, Pre-releases and compared for major maintainability."
 impact: "Know hosted versions and compare them with the most current ones.."
-stack:
+technologies:
   - Golang
   - Python
 supportedTechnologies: 

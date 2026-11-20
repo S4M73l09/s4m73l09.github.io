@@ -6,7 +6,7 @@ provider: az
 challenge: Build an Azure bootstrap baseline to keep bootstrap and live infrastructure separated.
 solution: Dedicated bootstrap repository with reusable structure for future deployments.
 impact: Improves traceability and reduces risk by decoupling bootstrap from live environments.
-stack:
+technologies:
   - Azure
   - Terraform
   - GitHub Actions

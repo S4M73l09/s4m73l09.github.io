@@ -6,11 +6,12 @@ export type LabProvider = 'gcs' | 'az';
 
 export type PortfolioItem = {
   slug: string;
+  language: PortfolioLanguage;
   title: string;
   challenge: string;
   solution: string;
   impact: string;
-  stack: string[];
+  technologies: string[];
   supportedTechnologies?: string[];
   repo: string;
   featured: boolean;

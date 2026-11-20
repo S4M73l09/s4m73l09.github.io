@@ -9,7 +9,7 @@ const baseSchema = z.object({
   challenge: z.string(),
   solution: z.string(),
   impact: z.string(),
-  stack: z.array(z.string()),
+  technologies: z.array(z.string()),
   supportedTechnologies: z.array(z.string()).optional(),
   repo: z.string().url(),
   featured: z.boolean().default(false),

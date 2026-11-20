@@ -5,13 +5,13 @@ routeSlug: jellyfin
 challenge: Build a fully automated and reproducible media server on Azure.
 solution: Terraform for IaC, Ansible for provisioning, and GitHub Actions for secret rotation and automatic playbook execution.
 impact: End-to-end deployment in under 10 minutes with fewer manual errors.
-stack:
+technologies:
   - Terraform
   - Ansible
   - Azure
   - Docker
   - GitHub Actions
-  - CI/CD
+  - WireGuard
 repo: https://github.com/S4M73l09/ProyectoServer
 featured: true
 order: 1

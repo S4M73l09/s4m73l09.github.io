@@ -5,12 +5,12 @@ routeSlug: "devops-mcp-guide"
 challenge: "Repository educated show the use of servers MCP in Tools DevOps."
 solution: "Learn server MCP for tools DevOps - with examples practices and teorical."
 impact: "Know the use of MCP for tools DevOps."
-stack:
-  - Context Model Protocol (MCP)
+technologies:
+  - MCP
   - Terraform
   - Docker
   - Kubernetes
-  - CI/CD (GitHub Actions)
+  - GitHub Actions
 repo: "https://github.com/S4M73l09/DevOps-mcp-guide"
 featured: true
 order: 5

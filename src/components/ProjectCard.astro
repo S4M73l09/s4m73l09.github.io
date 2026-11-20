@@ -1,5 +1,6 @@
 ---
 import type { PortfolioItem } from '../domain/portfolio/types';
+import TechnologyGroups from './TechnologyGroups.astro';
 
 interface Props {
   project: PortfolioItem;
@@ -28,7 +29,7 @@ const text = labels ?? {
   <p><strong>{text.challenge}:</strong> {project.challenge}</p>
   <p><strong>{text.solution}:</strong> {project.solution}</p>
   <p><strong>{text.impact}:</strong> {project.impact}</p>
-  <p class="stack">{project.stack.join(' · ')}</p>
+  <TechnologyGroups technologies={project.technologies} language={project.language} />
   {detailHref && <a class="cta" href={detailHref}>{text.details} →</a>}
   <a class="cta" href={project.repo} target="_blank" rel="noreferrer">{text.repository} ↗</a>
 </article>

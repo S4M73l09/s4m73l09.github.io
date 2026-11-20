@@ -6,7 +6,7 @@ provider: az
 challenge: Crear una base bootstrap en Azure para separar el arranque de la infraestructura real.
 solution: Repositorio dedicado para bootstrap con estructura reutilizable y preparado para futuros despliegues.
 impact: Mejora la trazabilidad y reduce el riesgo al desacoplar bootstrap de entornos en vivo.
-stack:
+technologies:
   - Azure
   - Terraform
   - GitHub Actions

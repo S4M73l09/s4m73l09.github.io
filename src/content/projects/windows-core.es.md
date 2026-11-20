@@ -5,7 +5,7 @@ routeSlug: windows-core
 challenge: Automatizar la creación de un dominio AD DS en Windows Server Core sin GUI.
 solution: Scripts PowerShell modulares para instalación, configuración y unión de clientes.
 impact: Despliegues empresariales virtualizados más consistentes.
-stack:
+technologies:
   - PowerShell
   - Windows Server Core
   - Active Directory

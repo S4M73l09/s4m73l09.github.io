@@ -98,6 +98,21 @@ Managed in:
 - `src/components/LabProviderAccordion.astro`
 - `src/styles/global.css`
 
+## Add and group technological stack
+
+A more effective and direct way to classify the technological stack used in each project and laboratory was added.
+
+Before the full stack was put in place, now it is more visual and coherent.
+
+Each token uses a flat list in the frontmatter:
+```YAML
+technologies:
+  - Azure
+  - Terraform
+  - Prometheus
+```
+The website groups according to the central catalog hosted at [`technologyCategories.ts`](src/domain/portfolio/technologyCategories.ts). If you add a technology that is already catalogued, it will automatically appear in your group; if not, it will go to `other . To assign it an existing category, add its normalized name to `categoryByTechnology`. If you create a new category, you must also add its label translated into Spanish and English.
+
 ## Hardening applied
 
 - Technical SEO:

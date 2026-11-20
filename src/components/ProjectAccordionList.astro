@@ -1,5 +1,6 @@
 ---
 import type { PortfolioItem } from '../domain/portfolio/types';
+import TechnologyGroups from './TechnologyGroups.astro';
 
 interface Props {
   projects: PortfolioItem[];
@@ -43,7 +44,7 @@ const toBase = (path: string) => {
           <p><strong>{text.challenge}:</strong> {project.challenge}</p>
           <p><strong>{text.solution}:</strong> {project.solution}</p>
           <p><strong>{text.impact}:</strong> {project.impact}</p>
-          <p class="stack">{project.stack.join(' · ')}</p>
+          <TechnologyGroups technologies={project.technologies} language={project.language} />
           {project.supportedTechnologies?.length ? (
             <div class="supported-technologies">
               <span class="supported-technologies-label">{text.supportedTechnologies}</span>

@@ -6,7 +6,7 @@ provider: az
 challenge: Shown an complete infraestructure using the governable base in Bootstrap, separate of projects.
 solution: Repository dedicated for the neccesary code use for this infraestructure in AKS.
 impact: Upgrade the show the resources, reduce the risks using separate projects be re-utilizing the resources in Bootstrap for host the neccesary.
-stack:
+technologies:
   - Azure
   - Terraform
   - GitHub Actions

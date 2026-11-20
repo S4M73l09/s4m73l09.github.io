@@ -5,7 +5,7 @@ routeSlug: jellyfin
 challenge: Crear un servidor multimedia 100% automatizado y reproducible en Azure.
 solution: Terraform para IaC, Ansible para aprovisionamiento y pipeline con GitHub Actions para secretos y ejecución automática.
 impact: Despliegue completo en menos de 10 minutos con menos error humano.
-stack:
+technologies:
   - Terraform
   - Ansible
   - Azure

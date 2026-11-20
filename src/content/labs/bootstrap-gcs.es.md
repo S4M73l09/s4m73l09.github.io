@@ -6,7 +6,7 @@ provider: gcs
 challenge: Preparar una base aislada para no heredar fallos entre despliegues.
 solution: Bootstrap separado para reutilizar en proyectos futuros de forma segura.
 impact: Separación clara entre bootstrap e infraestructura real.
-stack:
+technologies:
   - OIDC
   - GCloud
   - Terraform

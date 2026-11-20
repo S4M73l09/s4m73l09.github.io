@@ -98,6 +98,22 @@ Todo esto se controla en:
 - `src/components/LabProviderAccordion.astro`
 - `src/styles/global.css`
 
+## Añadir y agrupar stack tecnologico
+
+Se añadio una manera mas efectiva y directa de clasificar el stack tecnologico usado en cada proyecto y laboratorio.
+
+Antes se ponia el stack completo, ahora es mas visual y coherente.
+
+Cada ficha usa una lista plana en el frontmatter:
+```YAML
+technologies:
+  - Azure
+  - Terraform
+  - Prometheus
+```
+
+La web agrupa según el catálogo central alojado en [`technologyCategories.ts`](src/domain/portfolio/technologyCategories.ts). Si se añade una tecnología que ya está catalogada, aparecerà en su grupo automáticamente; si no, irá a `otros`. Para asignarle una categoría existente, añade su nombre normalizado a `categoryByTechnology`. Si creas una categoŕia nueva, también hay que añadir su etiqueta traducida en español e inglés. 
+
 ## Hardening aplicado
 
 - SEO tecnico:
